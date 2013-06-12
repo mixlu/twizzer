@@ -1,0 +1,24 @@
+TwizXXX	
+Solution due April 29th, noon.	
+Review due April 30th, noon.	
+	
+a) Define the following general-purpose functions for the state monad. Most of the function definitions should follow automatically from their types: onState applies a function to the underlying state, fromState extracts a value from a state using a parameter function, and init initializes the state	
+	
+    tranState :: (s -> s) -> (s -> a) -> State s a	
+    onState   :: (s -> s) -> State s ()	
+    fromState :: (s -> a) -> State s a	
+    init      :: s -> State s ()	
+	
+Remember that all these functions do not modify a state directly, but rather define state transformations functions that, when run, perform the specified transformations.	
+Consider the following definition of a "counter monad" as an instance of the state (transformer) monad.	
+	
+    type Counter a = State Int a	
+	
+b) Define the following state-based, monadic counting functions.	
+	
+    reset :: Counter ()	
+    incr  :: Counter ()	
+    get   :: Counter Int	
+    add   :: Int -> Counter ()	
+	
+	

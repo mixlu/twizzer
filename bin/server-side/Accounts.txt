@@ -1,0 +1,9 @@
+Username	Password	PermissionLevel (0-student, 1-admin)
+admin	admin	1
+Alex	1234	0
+Bill	1234	0
+Chanel	1234	0
+David	1234	0
+Elvin	1234	0
+Forrest	new23	0
+Gabby	kevin123	1
