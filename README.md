@@ -66,7 +66,7 @@ Specification
          * -2- ReadReview
          * -3- Exit	
 
-How to run
+How to run Twizzer
 -------------------------------------------------------------------------------------------
 On the server side, download folder .bin/server-side, open Server.exe and keep running.
 
